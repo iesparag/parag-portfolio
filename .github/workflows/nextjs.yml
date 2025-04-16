@@ -29,7 +29,12 @@ jobs:
         run: npm ci
 
       - name: Build Next.js app
-        run: npm run build
+        run: |
+          npm run build
+          npm run export
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

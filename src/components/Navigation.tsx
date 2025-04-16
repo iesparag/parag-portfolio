@@ -4,7 +4,7 @@ import ThemeToggle from './ThemeToggle';
 import { X, Menu } from './icons';
 
 export default function Navigation() {
-  const [ _,setIsScrolled] = useState(false);
+  const [ ,setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {

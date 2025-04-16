@@ -19,7 +19,7 @@ export default function SkillsSection() {
             Skills & Technologies
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Technologies I've been working with
+            Technologies I have been working with
           </p>
         </motion.div>
 

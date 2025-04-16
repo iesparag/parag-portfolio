@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// const nextConfig: NextConfig = {
+//   /* config options here */
+// };
+
+// export default nextConfig;
+
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  // Use this if it's a project site (not username.github.io)
+  basePath: process.env.NODE_ENV === 'production' ? '/parag-portfolio' : '',
+  images: {
+    unoptimized: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

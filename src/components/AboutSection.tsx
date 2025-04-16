@@ -1,13 +1,16 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { aboutData } from '@/data/about-data';
 import { BsCodeSlash, BsLightbulb } from 'react-icons/bs';
 import { FaUsers, FaRocket } from 'react-icons/fa';
 
 export default function AboutSection() {
   const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
 
   return (
     <section className="py-16 w-full relative overflow-hidden bg-gradient-to-b from-background to-background/50">

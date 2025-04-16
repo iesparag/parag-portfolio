@@ -1,4 +1,5 @@
-import { motion, Variants } from 'framer-motion';
+import { motion, Variants, MouseEvent } from 'framer-motion';
+import React from 'react';
 
 interface HamburgerMenuProps {
   isOpen: boolean;
@@ -19,7 +20,7 @@ const menuVariants: Variants = {
   }
 };
 
-const Path = (props: any) => (
+const Path = (props: React.SVGProps<motion.path>) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"

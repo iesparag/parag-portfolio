@@ -1,4 +1,4 @@
-import { motion, Variants } from 'framer-motion';
+import { motion, Variants, SVGMotionProps  } from 'framer-motion';
 import React from 'react';
 
 interface HamburgerMenuProps {
@@ -20,7 +20,7 @@ const menuVariants: Variants = {
   }
 };
 
-const Path = (props: React.SVGProps<motion.path>) => (
+const Path = (props: SVGMotionProps<SVGPathElement>) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"

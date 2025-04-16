@@ -4,7 +4,7 @@ import ThemeToggle from './ThemeToggle';
 import { X, Menu } from './icons';
 
 export default function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [ _,setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -115,7 +115,7 @@ export default function Navigation() {
                   }
                 }}
               >
-                {navItems.map((item, index) => (
+                {navItems.map((item) => (
                   <motion.a
                     key={item.name}
                     href={item.href}

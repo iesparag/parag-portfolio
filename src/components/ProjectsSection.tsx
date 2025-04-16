@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
 import { projects } from '@/data/portfolio-data';
 import React, { useEffect, useRef } from 'react';
 
 export default function ProjectsSection() {
-  const { resolvedTheme } = useTheme();
   const videoRefs = useRef<HTMLVideoElement[]>([]);
 
   // Initialize refs array

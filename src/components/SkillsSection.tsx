@@ -1,11 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
 import { skillsData } from '@/data/skills-data';
 
 export default function SkillsSection() {
-  const { resolvedTheme } = useTheme();
 
   return (
     <section id="skills" className="min-h-screen py-20 px-4 sm:px-8 md:px-16 lg:px-24 bg-gray-50 dark:bg-gray-900">
